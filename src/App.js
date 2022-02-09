@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const slider = setInterval(() => {
     setIndex(checkIndex(index + 1));
-    },1000);
+    },5000);
 
     return () => clearInterval(slider)
   }, [index]);
